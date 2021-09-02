@@ -1,0 +1,77 @@
+0
+SLURM_JOBID=4729
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Sat May 22 23:30:36 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 16
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Sat May 22 23:30:36 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-1fp4xcyt because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[18:00:41] [WARNING] [debias.main] No observers have been added to this run
+[18:00:41] [INFO] [debias.main] Running command 'train'
+[18:00:41] [INFO] [debias.main] Started
+CelebA
+0it [00:00, ?it/s]3120it [00:00, 334592.02it/s]
+0it [00:00, ?it/s]65536it [00:00, 482383.27it/s]163840it [00:00, 552804.98it/s]425984it [00:00, 723155.73it/s]1179648it [00:00, 991441.10it/s]3342336it [00:00, 1388927.31it/s]7606623it [00:00, 1909654.79it/s]9919209it [00:01, 2513215.95it/s]11239686it [00:01, 2985276.52it/s]13417865it [00:01, 3658001.45it/s]17424219it [00:01, 4875528.63it/s]18671635it [00:02, 3437320.81it/s]19826853it [00:02, 3769882.79it/s]21950657it [00:03, 3746025.66it/s]26721026it [00:03, 8087760.90it/s]
+0it [00:00, ?it/s]65536it [00:00, 479366.58it/s]163840it [00:00, 549551.05it/s]425984it [00:00, 718304.00it/s]1179648it [00:00, 985196.06it/s]3342336it [00:00, 1380261.08it/s]3424458it [00:00, 6086852.08it/s]
+0it [00:00, ?it/s]65536it [00:00, 472376.73it/s]163840it [00:00, 541391.53it/s]425984it [00:00, 708416.65it/s]1146880it [00:00, 970641.90it/s]3112960it [00:00, 1357715.05it/s]6082035it [00:00, 9718902.72it/s]
+0it [00:00, ?it/s]65536it [00:00, 430851.22it/s]131072it [00:00, 479783.77it/s]327680it [00:00, 618365.19it/s]884736it [00:00, 842625.67it/s]2457600it [00:00, 1176619.29it/s]6914048it [00:00, 1662073.10it/s]9814797it [00:01, 2179450.21it/s]12156055it [00:01, 11654348.59it/s]
+0it [00:00, ?it/s]65536it [00:00, 481946.01it/s]163840it [00:00, 552565.50it/s]425984it [00:00, 723407.33it/s]1179648it [00:00, 991968.95it/s]2836386it [00:00, 5248405.25it/s]
+[18:01:04] [ERROR] [debias.main] Failed after 0:00:23!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/raid/ysharma_me/fair_lr/LfF/train.py", line 54, in train
+    transform_split="train",
+  File "/raid/ysharma_me/fair_lr/LfF/data/util.py", line 121, in get_dataset
+    download=True,
+  File "/opt/conda/lib/python3.6/site-packages/torchvision/datasets/celeba.py", line 66, in __init__
+    self.download()
+  File "/opt/conda/lib/python3.6/site-packages/torchvision/datasets/celeba.py", line 120, in download
+    with zipfile.ZipFile(os.path.join(self.root, self.base_folder, "img_align_celeba.zip"), "r") as f:
+  File "/opt/conda/lib/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/opt/conda/lib/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+

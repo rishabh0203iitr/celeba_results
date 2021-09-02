@@ -1,0 +1,18 @@
+0
+SLURM_JOBID=5836
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Tue Aug  3 23:01:03 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Tue Aug  3 23:01:03 IST 2021
+0
+nvidia-docker | 2021/08/03 23:01:06 Error: Error response from daemon: pull access denied for pytorchlightning-mod-ysharma/pytorch-lightning, repository does not exist or may require 'docker login'

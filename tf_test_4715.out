@@ -1,0 +1,18 @@
+NoDevFiles
+SLURM_JOBID=4715
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Sat May 22 17:12:19 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 1
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Sat May 22 17:12:19 IST 2021
+NoDevFiles
+/usr/local/bin/docker-php-entrypoint: 9: exec: python: not found

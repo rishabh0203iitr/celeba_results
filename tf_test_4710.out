@@ -1,0 +1,77 @@
+NoDevFiles
+SLURM_JOBID=4710
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Sat May 22 17:04:05 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 1
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Sat May 22 17:04:05 IST 2021
+NoDevFiles
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-pqzcp6h6 because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/site-packages/wand/api.py", line 151, in <module>
+    libraries = load_library()
+  File "/opt/conda/lib/python3.6/site-packages/wand/api.py", line 140, in load_library
+    raise IOError('cannot find library; tried paths: ' + repr(tried_paths))
+OSError: cannot find library; tried paths: []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/raid/ysharma_me/fair_lr/LfF/make_dataset.py", line 12, in <module>
+    from data.corrupted_cifar10_protocol import CORRUPTED_CIFAR10_PROTOCOL
+  File "/raid/ysharma_me/fair_lr/LfF/data/corrupted_cifar10_protocol.py", line 17, in <module>
+    from wand.image import Image as WandImage
+  File "/opt/conda/lib/python3.6/site-packages/wand/image.py", line 18, in <module>
+    from . import assertions
+  File "/opt/conda/lib/python3.6/site-packages/wand/assertions.py", line 125, in <module>
+    from .color import Color  # noqa: E402
+  File "/opt/conda/lib/python3.6/site-packages/wand/color.py", line 10, in <module>
+    from .api import library
+  File "/opt/conda/lib/python3.6/site-packages/wand/api.py", line 177, in <module>
+    'Try to install:\n  ' + msg)
+ImportError: MagickWand shared library not found.
+You probably had not installed ImageMagick library.
+Try to install:
+  apt-get install libmagickwand-dev

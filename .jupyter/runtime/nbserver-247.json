@@ -1,0 +1,12 @@
+{
+  "base_url": "/",
+  "hostname": "0.0.0.0",
+  "notebook_dir": "/workspace",
+  "password": false,
+  "pid": 247,
+  "port": 8091,
+  "secure": false,
+  "sock": "",
+  "token": "39f22faf6fff7b489e41d29554ec51b445aca991367796ba",
+  "url": "http://0.0.0.0:8091/"
+}

@@ -1,0 +1,584 @@
+NoDevFiles
+SLURM_JOBID=5834
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Tue Aug  3 22:40:06 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 1
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Tue Aug  3 22:40:06 IST 2021
+NoDevFiles
+CONTAINER ID        IMAGE                                     COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+794a08edb65a        tali_cs/talift:latest                     "/bin/bash init.sh"      2 days ago          Up 2 days                                                        talift-container
+9f779581ffee        nvcr.io/nvidia/tensorflow:21.04-tf2-py3   "/usr/local/bin/nvid…"   2 days ago          Up 2 days           6006/tcp, 6064/tcp, 0.0.0.0:8888->8888/tcp   dgx_anmol
+Tue Aug  3 22:40:06 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+| N/A   30C    P0    41W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+| N/A   32C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+| N/A   32C    P0    44W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+| N/A   29C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   31C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   31C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+| N/A   34C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+| N/A   32C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    3.01%               14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    3.01%               14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.16%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.16%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.72%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.72%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.86%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.86%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    89.34%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    89.34%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.30%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.30%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.29%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.29%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.97%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.97%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.13%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.13%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.32%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.32%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    74.04%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    74.04%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.77%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.77%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.53%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.53%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.89%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.89%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.90%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.90%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    68.99%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    68.99%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.07%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.07%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.85%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.85%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.97%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.97%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.67%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.67%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.16%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.16%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.49%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.49%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.27%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.27%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    133.32%             14.18GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      783
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    133.32%             14.18GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      783
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    129.60%             14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    129.60%             14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.17%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.17%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.43%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.43%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.63%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.63%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      779
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.74%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.74%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.53%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.53%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      780
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.23%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.23%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.12%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.12%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.06%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.06%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.47%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.47%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.36%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.36%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      782
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.14%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.14%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.79%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.79%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.65%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.65%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.50%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.50%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.22%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.22%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.98%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.98%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.63%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.63%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.27%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.27%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.63%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.63%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.37%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.37%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.32%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.32%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.04%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.04%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.73%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.73%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.76%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.76%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.98%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.98%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.21%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.21%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.52%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.52%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.60%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    73.60%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.60%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.60%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.28%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.28%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.39%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      786
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    90.03%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    90.03%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.58%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.58%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.22%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.22%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.38%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.38%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.02%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.02%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      796
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.34%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.34%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.21%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.21%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.80%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.80%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.84%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    70.84%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.20%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      794
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.23%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    69.23%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.64%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    71.64%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.56%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    72.56%              14.14GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    84.12%              14.15GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    84.12%              14.15GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      790
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    58.34%              14.17GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    58.34%              14.17GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    59.94%              14.18GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    59.94%              14.18GiB / 503.8GiB   2.81%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    68.53%              14.19GiB / 503.8GiB   2.82%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    68.53%              14.19GiB / 503.8GiB   2.82%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    63.76%              14.21GiB / 503.8GiB   2.82%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    63.76%              14.21GiB / 503.8GiB   2.82%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    89.88%              14.23GiB / 503.8GiB   2.82%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    89.88%              14.23GiB / 503.8GiB   2.82%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    124.51%             14.23GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    124.51%             14.23GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    128.38%             14.24GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    128.38%             14.24GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    128.00%             14.24GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    128.00%             14.24GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    128.58%             14.25GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    128.58%             14.25GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    125.46%             14.26GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    125.46%             14.26GiB / 503.8GiB   2.83%               0B / 0B             168MB / 42.7GB      800
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83
+slurmstepd: *** JOB 5834 ON iitrdgx CANCELLED AT 2021-08-03T22:41:35 DUE TO TIME LIMIT ***
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+794a08edb65a        talift-container    170.05%             14.29GiB / 503.8GiB   2.84%               0B / 0B             168MB / 42.7GB      803
+9f779581ffee        dgx_anmol           0.00%               146.4MiB / 503.8GiB   0.03%               853kB / 0B          0B / 0B             83

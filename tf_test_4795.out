@@ -1,0 +1,71 @@
+0
+SLURM_JOBID=4795
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Sun May 30 18:08:52 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Sun May 30 18:08:52 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-e3bb3zg8 because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[12:38:58] [WARNING] [debias.main] No observers have been added to this run
+[12:38:59] [INFO] [debias.main] Running command 'train'
+[12:38:59] [INFO] [debias.main] Started
+CelebA
+Downloading: "https://download.pytorch.org/models/resnet18-5c106cde.pth" to raid/ysharma_me/fair_lr/dnew/checkpoints/resnet18-5c106cde.pth
+  0% 0.00/44.7M [00:00<?, ?B/s] 10% 4.31M/44.7M [00:00<00:00, 45.2MB/s] 16% 7.07M/44.7M [00:00<00:01, 38.7MB/s] 29% 12.9M/44.7M [00:00<00:00, 43.5MB/s] 46% 20.5M/44.7M [00:00<00:00, 50.3MB/s] 58% 26.0M/44.7M [00:00<00:00, 52.4MB/s] 73% 32.5M/44.7M [00:00<00:00, 56.3MB/s] 85% 37.8M/44.7M [00:00<00:00, 53.6MB/s] 98% 44.0M/44.7M [00:00<00:00, 56.2MB/s]100% 44.7M/44.7M [00:00<00:00, 54.6MB/s]
+[12:39:03] [ERROR] [debias.main] Failed after 0:00:04!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/raid/ysharma_me/fair_lr/LfF/train_dnew.py", line 100, in train
+    F_E = get_model(model_tag, attr_dims[0]).to(device)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 425, in to
+    return self._apply(convert)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 201, in _apply
+    module._apply(fn)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 223, in _apply
+    param_applied = fn(param)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 423, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+

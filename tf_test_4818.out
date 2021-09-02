@@ -1,0 +1,764 @@
+NoDevFiles
+SLURM_JOBID=4818
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Mon May 31 22:17:58 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 1
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Mon May 31 22:17:58 IST 2021
+NoDevFiles
+CONTAINER ID        IMAGE                                                             COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+347d87c8883e        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   2 minutes ago       Up 2 minutes        6006/tcp, 8888/tcp                           4817
+e86b2c5eaa4a        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   3 minutes ago       Up 3 minutes        6006/tcp, 8888/tcp                           4816
+c559ea2d4ace        continuumio/miniconda3                                            "/bin/bash"              2 weeks ago         Up 2 weeks                                                       4658
+1f6016046dc4        continuumio/miniconda3                                            "/bin/bash"              2 weeks ago         Up 2 weeks                                                       4656
+2c9c6a49bf49        nvcr.io/nvidia/tensorflow:21.04-tf2-py3                           "/usr/local/bin/nvid…"   2 weeks ago         Up 2 weeks          6006/tcp, 6064/tcp, 0.0.0.0:8888->8888/tcp   tf2_anmol
+Mon May 31 22:17:58 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+| N/A   56C    P0   289W / 300W |   3696MiB / 32480MiB |     99%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+| N/A   62C    P0   295W / 300W |   3692MiB / 32480MiB |     94%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+| N/A   29C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+| N/A   27C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   28C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   28C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+| N/A   30C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+| N/A   29C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0      7883      C   python                                      3667MiB |
+|    1      8733      C   python                                      3665MiB |
++-----------------------------------------------------------------------------+
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT    MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                0.03%               7.62GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                0.05%               3.13GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB    0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB    0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.45%               288KiB / 503.8GiB    0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT    MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                0.03%               7.62GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                0.05%               3.13GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB    0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB    0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.45%               288KiB / 503.8GiB    0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                485.33%             7.627GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.34%             3.198GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                485.33%             7.627GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.34%             3.198GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                507.81%             7.627GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                519.43%             3.177GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                507.81%             7.627GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                519.43%             3.177GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                476.82%             7.627GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                510.83%             3.144GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                476.82%             7.627GiB / 503.8GiB   1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                510.83%             3.144GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                497.73%             7.703GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                511.03%             3.118GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                497.73%             7.703GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                511.03%             3.118GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                502.33%             7.703GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                503.13%             3.186GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                502.33%             7.703GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                503.13%             3.186GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                474.85%             7.702GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.89%             3.156GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                474.85%             7.702GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.89%             3.156GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                484.41%             7.673GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.46%             3.117GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                484.41%             7.673GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.46%             3.117GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                480.93%             7.674GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                506.43%             3.19GiB / 503.8GiB    0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                480.93%             7.674GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                506.43%             3.19GiB / 503.8GiB    0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                489.42%             7.674GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                521.55%             3.184GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                489.42%             7.674GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                521.55%             3.184GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                488.63%             7.674GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                508.08%             3.139GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                488.63%             7.674GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                508.08%             3.139GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                479.89%             7.699GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                513.01%             3.118GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                479.89%             7.699GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                513.01%             3.118GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                502.21%             7.699GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                510.64%             3.202GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                502.21%             7.699GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                510.64%             3.202GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                479.61%             7.699GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                496.11%             3.171GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                479.61%             7.699GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                496.11%             3.171GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                506.19%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                505.68%             3.134GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                506.19%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                505.68%             3.134GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                482.96%             7.713GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                496.55%             3.2GiB / 503.8GiB     0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                482.96%             7.713GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                496.55%             3.2GiB / 503.8GiB     0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                493.58%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                510.55%             3.181GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                493.58%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                510.55%             3.181GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                495.10%             7.713GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                501.47%             3.131GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                495.10%             7.713GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                501.47%             3.131GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                481.75%             7.713GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                495.56%             3.202GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                481.75%             7.713GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                495.56%             3.202GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                489.40%             7.719GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                526.56%             3.191GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                489.40%             7.719GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                526.56%             3.191GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                485.97%             7.63GiB / 503.8GiB    1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.68%             3.146GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                485.97%             7.63GiB / 503.8GiB    1.51%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.68%             3.146GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                509.09%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                529.09%             3.13GiB / 503.8GiB    0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                509.09%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                529.09%             3.13GiB / 503.8GiB    0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                501.40%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                517.66%             3.206GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                501.40%             7.712GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                517.66%             3.206GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                487.25%             7.732GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                501.39%             3.173GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                487.25%             7.732GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                501.39%             3.173GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                492.61%             7.733GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                529.23%             3.141GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                492.61%             7.733GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                529.23%             3.141GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                475.36%             7.733GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.78%             3.204GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                475.36%             7.733GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.78%             3.204GiB / 503.8GiB   0.64%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                486.22%             7.733GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                497.97%             3.181GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                486.22%             7.733GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                497.97%             3.181GiB / 503.8GiB   0.63%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                473.36%             7.65GiB / 503.8GiB    1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.72%             3.136GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                473.36%             7.65GiB / 503.8GiB    1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                500.72%             3.136GiB / 503.8GiB   0.62%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                498.63%             7.658GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                522.11%             3.267GiB / 503.8GiB   0.65%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                498.63%             7.658GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                522.11%             3.267GiB / 503.8GiB   0.65%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                486.92%             7.662GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                554.81%             3.429GiB / 503.8GiB   0.68%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                486.92%             7.662GiB / 503.8GiB   1.52%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                554.81%             3.429GiB / 503.8GiB   0.68%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                483.64%             7.694GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                551.77%             3.66GiB / 503.8GiB    0.73%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                483.64%             7.694GiB / 503.8GiB   1.53%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                551.77%             3.66GiB / 503.8GiB    0.73%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                476.21%             7.797GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                573.51%             3.824GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                476.21%             7.797GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                573.51%             3.824GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                120.62%             7.797GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                512.53%             3.713GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                120.62%             7.797GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                512.53%             3.713GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                99.90%              7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                487.83%             3.807GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                99.90%              7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                487.83%             3.807GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                100.02%             7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                490.92%             3.785GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                100.02%             7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                490.92%             3.785GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                99.92%              7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                490.94%             3.763GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                99.92%              7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                490.94%             3.763GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                99.97%              7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                493.59%             3.74GiB / 503.8GiB    0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                99.97%              7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                493.59%             3.74GiB / 503.8GiB    0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                100.41%             7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                490.54%             3.707GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                100.41%             7.796GiB / 503.8GiB   1.55%               47.4MB / 538kB      0B / 0B             77
+e86b2c5eaa4a        4816                490.54%             3.707GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                337.74%             2.135GiB / 503.8GiB   0.42%               47.4MB / 538kB      0B / 0B             45
+e86b2c5eaa4a        4816                493.94%             3.794GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                337.74%             2.135GiB / 503.8GiB   0.42%               47.4MB / 538kB      0B / 0B             45
+e86b2c5eaa4a        4816                493.94%             3.794GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1283.62%            5.606GiB / 503.8GiB   1.11%               47.4MB / 538kB      0B / 0B             51
+e86b2c5eaa4a        4816                519.34%             3.744GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1283.62%            5.606GiB / 503.8GiB   1.11%               47.4MB / 538kB      0B / 0B             51
+e86b2c5eaa4a        4816                519.34%             3.744GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1655.56%            6.524GiB / 503.8GiB   1.29%               47.4MB / 538kB      0B / 0B             80
+e86b2c5eaa4a        4816                553.44%             3.844GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1655.56%            6.524GiB / 503.8GiB   1.29%               47.4MB / 538kB      0B / 0B             80
+e86b2c5eaa4a        4816                553.44%             3.844GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1464.36%            9.126GiB / 503.8GiB   1.81%               47.4MB / 538kB      0B / 0B             110
+e86b2c5eaa4a        4816                555.06%             3.812GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1464.36%            9.126GiB / 503.8GiB   1.81%               47.4MB / 538kB      0B / 0B             110
+e86b2c5eaa4a        4816                555.06%             3.812GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1742.22%            10.93GiB / 503.8GiB   2.17%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                580.80%             3.795GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1742.22%            10.93GiB / 503.8GiB   2.17%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                580.80%             3.795GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1109.87%            11.13GiB / 503.8GiB   2.21%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                565.34%             3.807GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1109.87%            11.13GiB / 503.8GiB   2.21%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                565.34%             3.807GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1195.75%            11.15GiB / 503.8GiB   2.21%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                510.48%             3.775GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1195.75%            11.15GiB / 503.8GiB   2.21%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                510.48%             3.775GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1255.81%            11.25GiB / 503.8GiB   2.23%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                510.71%             3.828GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1255.81%            11.25GiB / 503.8GiB   2.23%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                510.71%             3.828GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1194.93%            11.34GiB / 503.8GiB   2.25%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                553.26%             3.783GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1194.93%            11.34GiB / 503.8GiB   2.25%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                553.26%             3.783GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                648.58%             11.39GiB / 503.8GiB   2.26%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                546.29%             3.789GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                648.58%             11.39GiB / 503.8GiB   2.26%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                546.29%             3.789GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                100.17%             11.39GiB / 503.8GiB   2.26%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                492.32%             3.764GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                100.17%             11.39GiB / 503.8GiB   2.26%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                492.32%             3.764GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                264.57%             6.542GiB / 503.8GiB   1.30%               47.4MB / 538kB      0B / 0B             83
+e86b2c5eaa4a        4816                498.80%             3.721GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                264.57%             6.542GiB / 503.8GiB   1.30%               47.4MB / 538kB      0B / 0B             83
+e86b2c5eaa4a        4816                498.80%             3.721GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                947.64%             9.003GiB / 503.8GiB   1.79%               47.4MB / 538kB      0B / 0B             110
+e86b2c5eaa4a        4816                501.26%             3.808GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                947.64%             9.003GiB / 503.8GiB   1.79%               47.4MB / 538kB      0B / 0B             110
+e86b2c5eaa4a        4816                501.26%             3.808GiB / 503.8GiB   0.76%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1662.67%            10.72GiB / 503.8GiB   2.13%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                540.22%             3.778GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1662.67%            10.72GiB / 503.8GiB   2.13%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                540.22%             3.778GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1198.97%            10.78GiB / 503.8GiB   2.14%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                543.35%             3.784GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1198.97%            10.78GiB / 503.8GiB   2.14%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                543.35%             3.784GiB / 503.8GiB   0.75%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1271.18%            10.77GiB / 503.8GiB   2.14%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                506.98%             3.712GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                1271.18%            10.77GiB / 503.8GiB   2.14%               47.4MB / 538kB      0B / 0B             142
+e86b2c5eaa4a        4816                506.98%             3.712GiB / 503.8GiB   0.74%               47.4MB / 418kB      0B / 69.6kB         77
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                878.54%             1.543MiB / 503.8GiB   0.00%               47.4MB / 538kB      0B / 0B             4
+e86b2c5eaa4a        4816                300.44%             400KiB / 503.8GiB     0.00%               47.4MB / 418kB      0B / 69.6kB         3
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+347d87c8883e        4817                878.54%             1.543MiB / 503.8GiB   0.00%               47.4MB / 538kB      0B / 0B             4
+e86b2c5eaa4a        4816                300.44%             400KiB / 503.8GiB     0.00%               47.4MB / 418kB      0B / 69.6kB         3
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB     0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB     0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+e86b2c5eaa4a        4816                300.44%             400KiB / 503.8GiB   0.00%               47.4MB / 418kB      0B / 69.6kB         3
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
+slurmstepd: *** JOB 4818 ON iitrdgx CANCELLED AT 2021-05-31T22:19:00 DUE TO TIME LIMIT ***
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+c559ea2d4ace        4658                0.00%               484KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+1f6016046dc4        4656                0.00%               480KiB / 503.8GiB   0.00%               266kB / 0B          0B / 0B             1
+2c9c6a49bf49        tf2_anmol           0.00%               288KiB / 503.8GiB   0.00%               68.2MB / 22MB       196MB / 2.39GB      1
