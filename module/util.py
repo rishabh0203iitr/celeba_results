@@ -7,7 +7,7 @@ def get_model(model_tag, num_classes):
     if model_tag == "ResNet20":
         return resnet20(num_classes)
     elif model_tag == "ResNet18":
-        model = resnet18(pretrained=True)
+        model = resnet18(pretrained=False)
         for param in model.parameters():
             param.requires_grad = False
         model.fc = nn.Linear(512, 1024)
