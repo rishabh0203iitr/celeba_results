@@ -47,7 +47,7 @@ def get_config():
 
 @ex.named_config
 def server_user():
-    log_dir = "/raid/ysharma_me/fair_lr/LfF/workspace_kld_18/debias/log"
+    log_dir = "/raid/ysharma_me/fair_lr/LfF/workspace_lff_9/debias/log"
     data_dir = "/raid/ysharma_me/fair_lr/LfF/datasets/debias"
 
 
@@ -88,7 +88,7 @@ def celeba(log_dir):
     model_tag = 'ResNet18'
     #for heavy makeup target is 18
     #for blonde hair is 9
-    target_attr_idx = 18
+    target_attr_idx = 9
     bias_attr_idx = 20
     main_num_steps = 636 * 200
     main_valid_freq = 636

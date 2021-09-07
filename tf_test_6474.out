@@ -1,0 +1,1025 @@
+NoDevFiles
+SLURM_JOBID=6474
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Tue Sep  7 18:55:11 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 1
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Tue Sep  7 18:55:11 IST 2021
+NoDevFiles
+CONTAINER ID        IMAGE                                                             COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+2ef692be6487        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   3 hours ago         Up 3 hours          6006/tcp, 8888/tcp                           6471
+a9e520cb7a71        pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1   "/usr/local/bin/nvid…"   3 hours ago         Up 3 hours          6006/tcp, 8888/tcp                           6470
+70d0d455f9bb        nvcr.io/nvidia/tensorflow:21.08-tf2-py3                           "/usr/local/bin/nvid…"   7 days ago          Up 7 days           6006/tcp, 6064/tcp, 0.0.0.0:8888->8888/tcp   dgx_a
+1adf0771e8ed        mip_nerf_latest                                                   "/bin/bash"              9 days ago          Up 9 days           8000-8001/tcp                                quirky_euler
+48df6bee0198        tensorflow_hrl1:latest                                            "/bin/bash"              2 weeks ago         Up 2 weeks          0.0.0.0:8000->8000/tcp                       wonderful_feistel
+8c05108fa3d4        tensorflow/tensorflow:latest-gpu                                  "bash"                   2 weeks ago         Up 2 weeks                                                       quizzical_einstein
+76afc92cb62b        tali_cs/talift:latest                                             "/bin/bash init.sh"      2 weeks ago         Up 2 weeks                                                       talift-container
+Tue Sep  7 18:55:11 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+| N/A   28C    P0    41W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+| N/A   35C    P0    45W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+| N/A   46C    P0    75W / 300W |   4032MiB / 32480MiB |     67%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   50C    P0   281W / 300W |   4030MiB / 32480MiB |     61%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   34C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+| N/A   32C    P0    42W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 300W |     11MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    3     10640      C   python                                      4003MiB |
+|    4      8511      C   python                                      4003MiB |
++-----------------------------------------------------------------------------+
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 5.97%               6.524GiB / 503.8GiB   1.29%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 5.94%               3.306GiB / 503.8GiB   0.66%               47.5MB / 563kB      0B / 16.8MB         79
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.56%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     58.34%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 5.97%               6.524GiB / 503.8GiB   1.29%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 5.94%               3.306GiB / 503.8GiB   0.66%               47.5MB / 563kB      0B / 16.8MB         79
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.56%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     58.34%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 865.27%             6.525GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1596.09%            3.475GiB / 503.8GiB   0.69%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     97.61%              4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 865.27%             6.525GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1596.09%            3.475GiB / 503.8GiB   0.69%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     97.61%              4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1002.67%            6.526GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1561.94%            3.462GiB / 503.8GiB   0.69%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     62.15%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1002.67%            6.526GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1561.94%            3.462GiB / 503.8GiB   0.69%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     62.15%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1087.83%            6.527GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 251.62%             3.526GiB / 503.8GiB   0.70%               47.5MB / 563kB      0B / 16.8MB         125
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     107.38%             4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1087.83%            6.527GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 251.62%             3.526GiB / 503.8GiB   0.70%               47.5MB / 563kB      0B / 16.8MB         125
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     107.38%             4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 985.23%             6.529GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1506.41%            6.054GiB / 503.8GiB   1.20%               47.5MB / 563kB      0B / 16.8MB         144
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     72.97%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 985.23%             6.529GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1506.41%            6.054GiB / 503.8GiB   1.20%               47.5MB / 563kB      0B / 16.8MB         144
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     72.97%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 812.02%             6.53GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1679.81%            5.758GiB / 503.8GiB   1.14%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     104.89%             4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 812.02%             6.53GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1679.81%            5.758GiB / 503.8GiB   1.14%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     104.89%             4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 986.52%             6.532GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 742.68%             4.861GiB / 503.8GiB   0.96%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     57.32%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 986.52%             6.532GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 742.68%             4.861GiB / 503.8GiB   0.96%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     57.32%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1051.93%            6.532GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1399.99%            4.971GiB / 503.8GiB   0.99%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     108.60%             4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1051.93%            6.532GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1399.99%            4.971GiB / 503.8GiB   0.99%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     108.60%             4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 960.12%             6.533GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1442.81%            5.022GiB / 503.8GiB   1.00%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     21.95%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 960.12%             6.533GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1442.81%            5.022GiB / 503.8GiB   1.00%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     21.95%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 982.03%             6.536GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1281.51%            4.942GiB / 503.8GiB   0.98%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     30.81%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 982.03%             6.536GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1281.51%            4.942GiB / 503.8GiB   0.98%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     30.81%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1129.34%            6.538GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 377.97%             4.295GiB / 503.8GiB   0.85%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     35.80%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1129.34%            6.538GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 377.97%             4.295GiB / 503.8GiB   0.85%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     35.80%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1029.07%            6.538GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 98.28%              4.295GiB / 503.8GiB   0.85%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     25.01%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1029.07%            6.538GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 98.28%              4.295GiB / 503.8GiB   0.85%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     25.01%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1175.92%            6.539GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 241.49%             3.521GiB / 503.8GiB   0.70%               47.5MB / 563kB      0B / 16.8MB         124
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     68.89%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1175.92%            6.539GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 241.49%             3.521GiB / 503.8GiB   0.70%               47.5MB / 563kB      0B / 16.8MB         124
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     68.89%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 903.42%             6.541GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1273.69%            5.803GiB / 503.8GiB   1.15%               47.5MB / 563kB      0B / 16.8MB         144
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     77.38%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 903.42%             6.541GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1273.69%            5.803GiB / 503.8GiB   1.15%               47.5MB / 563kB      0B / 16.8MB         144
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     77.38%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 948.21%             6.541GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1713.40%            5.894GiB / 503.8GiB   1.17%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     86.24%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 948.21%             6.541GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1713.40%            5.894GiB / 503.8GiB   1.17%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     86.24%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     704
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 889.95%             6.542GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1498.24%            5.41GiB / 503.8GiB    1.07%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     69.33%              4.31GiB / 503.8GiB    0.86%               0B / 0B             9.38MB / 69.6GB     694
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 889.95%             6.542GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1498.24%            5.41GiB / 503.8GiB    1.07%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     69.33%              4.31GiB / 503.8GiB    0.86%               0B / 0B             9.38MB / 69.6GB     694
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 932.23%             6.543GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1509.85%            5.083GiB / 503.8GiB   1.01%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     94.97%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     706
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 932.23%             6.543GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1509.85%            5.083GiB / 503.8GiB   1.01%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     94.97%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     706
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1026.22%            6.545GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1445.87%            4.947GiB / 503.8GiB   0.98%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     67.73%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1026.22%            6.545GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1445.87%            4.947GiB / 503.8GiB   0.98%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     67.73%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 986.31%             6.546GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1047.58%            4.41GiB / 503.8GiB    0.88%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     96.27%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 986.31%             6.546GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1047.58%            4.41GiB / 503.8GiB    0.88%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     96.27%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1033.14%            6.547GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 164.79%             4.293GiB / 503.8GiB   0.85%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     63.45%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1033.14%            6.547GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 164.79%             4.293GiB / 503.8GiB   0.85%               47.5MB / 563kB      0B / 16.8MB         176
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     63.45%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1039.79%            6.548GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 264.90%             3.473GiB / 503.8GiB   0.69%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     98.15%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1039.79%            6.548GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 264.90%             3.473GiB / 503.8GiB   0.69%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     98.15%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1038.41%            6.549GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 948.89%             3.647GiB / 503.8GiB   0.72%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     56.19%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1038.41%            6.549GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 948.89%             3.647GiB / 503.8GiB   0.72%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     56.19%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1062.99%            6.55GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1014.09%            3.69GiB / 503.8GiB    0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     102.02%             4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1062.99%            6.55GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1014.09%            3.69GiB / 503.8GiB    0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     102.02%             4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 955.73%             6.551GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1078.18%            3.646GiB / 503.8GiB   0.72%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     55.48%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 955.73%             6.551GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1078.18%            3.646GiB / 503.8GiB   0.72%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     55.48%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 972.91%             6.551GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 972.40%             3.634GiB / 503.8GiB   0.72%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     105.15%             4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 972.91%             6.551GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 972.40%             3.634GiB / 503.8GiB   0.72%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     105.15%             4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1058.24%            6.552GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1019.20%            3.691GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     56.70%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1058.24%            6.552GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1019.20%            3.691GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     56.70%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 991.30%             6.553GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 976.65%             3.722GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     99.45%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 991.30%             6.553GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 976.65%             3.722GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     99.45%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1058.79%            6.554GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1042.01%            3.722GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     61.85%              4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1058.79%            6.554GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1042.01%            3.722GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     61.85%              4.313GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1000.36%            6.555GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1035.87%            3.675GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     89.47%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1000.36%            6.555GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1035.87%            3.675GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     89.47%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 947.51%             6.556GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 956.21%             3.675GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     72.38%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 947.51%             6.556GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 956.21%             3.675GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     72.38%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 928.87%             6.556GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 982.40%             3.665GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     94.37%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 928.87%             6.556GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 982.40%             3.665GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     94.37%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1010.08%            6.556GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 995.87%             3.741GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     70.05%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1010.08%            6.556GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 995.87%             3.741GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     70.05%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1024.16%            6.558GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 998.26%             3.718GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     91.90%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1024.16%            6.558GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 998.26%             3.718GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     91.90%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1036.41%            6.558GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1023.73%            3.746GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     74.41%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1036.41%            6.558GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1023.73%            3.746GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     74.41%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 969.65%             6.559GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1073.24%            3.7GiB / 503.8GiB     0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     80.78%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 969.65%             6.559GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1073.24%            3.7GiB / 503.8GiB     0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     80.78%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 925.04%             6.56GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 925.61%             3.695GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     79.69%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 925.04%             6.56GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 925.61%             3.695GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     79.69%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1086.19%            6.561GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1029.52%            3.768GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     77.12%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1086.19%            6.561GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1029.52%            3.768GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     77.12%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 923.52%             6.561GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1004.77%            3.776GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     83.24%              4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 923.52%             6.561GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1004.77%            3.776GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     83.24%              4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 999.70%             6.562GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 987.33%             3.691GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     69.76%              4.319GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 999.70%             6.562GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 987.33%             3.691GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     69.76%              4.319GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1017.23%            6.565GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 893.46%             3.675GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     89.67%              4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1017.23%            6.565GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 893.46%             3.675GiB / 503.8GiB   0.73%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     89.67%              4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1041.89%            6.565GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 943.36%             3.781GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     59.21%              4.319GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1041.89%            6.565GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 943.36%             3.781GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     59.21%              4.319GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     708
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 982.20%             6.565GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 970.82%             3.775GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     100.55%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 982.20%             6.565GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 970.82%             3.775GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     100.55%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     705
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 994.36%             6.566GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 926.84%             3.769GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     55.81%              4.319GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 994.36%             6.566GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 926.84%             3.769GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     55.81%              4.319GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1040.30%            6.568GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 936.12%             3.772GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     100.71%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     706
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1040.30%            6.568GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 936.12%             3.772GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     100.71%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     706
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 996.03%             6.569GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 980.75%             3.76GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     57.85%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 996.03%             6.569GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 980.75%             3.76GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     57.85%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1005.43%            6.569GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 948.82%             3.76GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     100.57%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     706
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1005.43%            6.569GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 948.82%             3.76GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     100.57%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     706
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1019.09%            6.57GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1021.90%            3.799GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     55.73%              4.309GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     696
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1019.09%            6.57GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1021.90%            3.799GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     55.73%              4.309GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     696
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 963.63%             6.57GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 972.73%             3.743GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     110.22%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     712
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 963.63%             6.57GiB / 503.8GiB    1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 972.73%             3.743GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     110.22%             4.315GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     712
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1049.46%            6.571GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 966.42%             3.739GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     52.50%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     712
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1049.46%            6.571GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 966.42%             3.739GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     52.50%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     712
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1001.69%            6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1098.81%            3.818GiB / 503.8GiB   0.76%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     75.59%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     710
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1001.69%            6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1098.81%            3.818GiB / 503.8GiB   0.76%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     75.59%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     710
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 947.32%             6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 979.97%             3.74GiB / 503.8GiB    0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     91.72%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 947.32%             6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 979.97%             3.74GiB / 503.8GiB    0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     91.72%              4.314GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1097.18%            6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1014.66%            3.78GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     45.18%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1097.18%            6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1014.66%            3.78GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     45.18%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1097.18%            6.572GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1014.66%            3.78GiB / 503.8GiB    0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     45.18%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 926.60%             6.574GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1042.79%            3.727GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     51.05%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 926.60%             6.574GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1042.79%            3.727GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     51.05%              4.318GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1106.00%            6.575GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1049.71%            3.811GiB / 503.8GiB   0.76%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     11.20%              4.32GiB / 503.8GiB    0.86%               0B / 0B             9.38MB / 69.6GB     710
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1106.00%            6.575GiB / 503.8GiB   1.30%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1049.71%            3.811GiB / 503.8GiB   0.76%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     11.20%              4.32GiB / 503.8GiB    0.86%               0B / 0B             9.38MB / 69.6GB     710
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 978.32%             6.576GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 985.71%             3.725GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     52.63%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 978.32%             6.576GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 985.71%             3.725GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     52.63%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     707
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 993.81%             6.578GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 937.56%             3.738GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     19.84%              4.321GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     710
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 993.81%             6.578GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 937.56%             3.738GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     19.84%              4.321GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     710
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 970.31%             6.579GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 906.84%             3.711GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     83.47%              4.316GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 970.31%             6.579GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 906.84%             3.711GiB / 503.8GiB   0.74%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     83.47%              4.316GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     709
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 987.36%             6.58GiB / 503.8GiB    1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 988.10%             3.828GiB / 503.8GiB   0.76%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     34.57%              4.32GiB / 503.8GiB    0.86%               0B / 0B             9.38MB / 69.6GB     713
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 987.36%             6.58GiB / 503.8GiB    1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 988.10%             3.828GiB / 503.8GiB   0.76%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     34.57%              4.32GiB / 503.8GiB    0.86%               0B / 0B             9.38MB / 69.6GB     713
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1068.30%            6.58GiB / 503.8GiB    1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1099.56%            3.771GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     87.79%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     713
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 1068.30%            6.58GiB / 503.8GiB    1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 1099.56%            3.771GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     87.79%              4.317GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     713
+slurmstepd: *** JOB 6474 ON iitrdgx CANCELLED AT 2021-09-07T18:56:13 DUE TO TIME LIMIT ***
+[2J[HCONTAINER ID        NAME                 CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+2ef692be6487        6471                 976.45%             6.581GiB / 503.8GiB   1.31%               47.6MB / 530kB      0B / 8.19kB         111
+a9e520cb7a71        6470                 942.21%             3.799GiB / 503.8GiB   0.75%               47.5MB / 563kB      0B / 16.8MB         111
+70d0d455f9bb        dgx_a                0.00%               32.75MiB / 503.8GiB   0.01%               4.57MB / 3.93kB     9.65MB / 0B         3
+1adf0771e8ed        quirky_euler         0.00%               480KiB / 503.8GiB     0.00%               166MB / 729kB       0B / 1.12GB         1
+48df6bee0198        wonderful_feistel    0.00%               484KiB / 503.8GiB     0.00%               37.5MB / 274kB      16.4kB / 43MB       1
+8c05108fa3d4        quizzical_einstein   0.00%               460KiB / 503.8GiB     0.00%               9.58MB / 4.89kB     0B / 0B             1
+76afc92cb62b        talift-container     29.68%              4.321GiB / 503.8GiB   0.86%               0B / 0B             9.38MB / 69.6GB     713
