@@ -1,0 +1,66 @@
+0
+SLURM_JOBID=6467
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Tue Sep  7 15:56:12 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Tue Sep  7 15:56:12 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+[10:26:19] [WARNING] [debias.main] No observers have been added to this run
+[10:26:19] [INFO] [debias.main] Running command 'train'
+[10:26:19] [INFO] [debias.main] Started
+CelebA
+0.0001
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to raid/ysharma_me/fair_lr/LfF/hub/checkpoints/resnet18-f37072fd.pth
+  0% 0.00/44.7M [00:00<?, ?B/s] 13% 5.99M/44.7M [00:00<00:00, 62.8MB/s] 32% 14.4M/44.7M [00:00<00:00, 68.6MB/s] 45% 20.0M/44.7M [00:00<00:00, 65.5MB/s] 60% 26.8M/44.7M [00:00<00:00, 66.2MB/s] 80% 35.7M/44.7M [00:00<00:00, 72.6MB/s] 94% 42.2M/44.7M [00:00<00:00, 71.1MB/s]100% 44.7M/44.7M [00:00<00:00, 73.8MB/s]
+  0% 0/127200 [00:00<?, ?it/s]/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+  0% 0/127200 [00:02<?, ?it/s]
+[10:26:44] [ERROR] [debias.main] Failed after 0:00:25!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/raid/ysharma_me/fair_lr/LfF/train_kld.py", line 195, in train
+    loss_kl = criterion1(logit_d , logit_b.data.max(1, keepdim=True)[1].squeeze(1)) #CE
+NameError: name 'criterion1' is not defined
+

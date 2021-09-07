@@ -1,0 +1,64 @@
+0
+SLURM_JOBID=6442
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Mon Sep  6 21:54:05 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Mon Sep  6 21:54:05 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+[16:24:11] [WARNING] [debias.main] No observers have been added to this run
+[16:24:11] [INFO] [debias.main] Running command 'train'
+[16:24:11] [INFO] [debias.main] Started
+CelebA
+[16:24:14] [ERROR] [debias.main] Failed after 0:00:03!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/raid/ysharma_me/fair_lr/LfF/train.py", line 93, in train
+    model_b = get_model(model_tag, attr_dims[0]).to(device)
+  File "/raid/ysharma_me/fair_lr/LfF/module/util.py", line 12, in get_model
+    model=model.load_state_dict(torch.hub.load_state_dict_from_url('https://download.pytorch.org/models/resnet18-f37072fd.pth', model_dir='/raid/ysharma_me/fair_lr/LfF/module'))
+  File "/opt/conda/lib/python3.6/site-packages/torch/hub.py", line 501, in load_state_dict_from_url
+    raise RuntimeError('Only one file(not dir) is allowed in the zipfile')
+RuntimeError: Only one file(not dir) is allowed in the zipfile
+

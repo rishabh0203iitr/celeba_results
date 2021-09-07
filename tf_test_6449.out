@@ -1,0 +1,108 @@
+0
+SLURM_JOBID=6449
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Mon Sep  6 22:24:36 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Mon Sep  6 22:24:36 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+[16:54:43] [WARNING] [debias.main] No observers have been added to this run
+[16:54:43] [INFO] [debias.main] Running command 'train'
+[16:54:43] [INFO] [debias.main] Started
+CelebA
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to raid/ysharma_me/fair_lr/LfF/hub/checkpoints/resnet18-f37072fd.pth
+[16:55:40] [ERROR] [debias.main] Failed after 0:00:58!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/opt/conda/lib/python3.6/http/client.py", line 1262, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/conda/lib/python3.6/http/client.py", line 1308, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/conda/lib/python3.6/http/client.py", line 1257, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/conda/lib/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/opt/conda/lib/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/opt/conda/lib/python3.6/http/client.py", line 1415, in connect
+    super().connect()
+  File "/opt/conda/lib/python3.6/http/client.py", line 946, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/opt/conda/lib/python3.6/socket.py", line 704, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/opt/conda/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/raid/ysharma_me/fair_lr/LfF/train.py", line 93, in train
+    model_b = get_model(model_tag, attr_dims[0]).to(device)
+  File "/raid/ysharma_me/fair_lr/LfF/module/util.py", line 11, in get_model
+    model = resnet18(pretrained=True)
+  File "/opt/conda/lib/python3.6/site-packages/torchvision/models/resnet.py", line 277, in resnet18
+    **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torchvision/models/resnet.py", line 263, in _resnet
+    progress=progress)
+  File "/opt/conda/lib/python3.6/site-packages/torch/hub.py", line 553, in load_state_dict_from_url
+    download_url_to_file(url, cached_file, hash_prefix, progress=progress)
+  File "/opt/conda/lib/python3.6/site-packages/torch/hub.py", line 419, in download_url_to_file
+    u = urlopen(req)
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 526, in open
+    response = self._open(req, data)
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 544, in _open
+    '_open', req)
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/opt/conda/lib/python3.6/urllib/request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+

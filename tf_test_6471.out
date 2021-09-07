@@ -1,0 +1,71 @@
+0
+SLURM_JOBID=6471
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Tue Sep  7 16:02:52 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Tue Sep  7 16:02:52 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+[10:32:59] [WARNING] [debias.main] No observers have been added to this run
+[10:32:59] [INFO] [debias.main] Running command 'train'
+[10:32:59] [INFO] [debias.main] Started
+CelebA
+0.0001
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to raid/ysharma_me/fair_lr/LfF/hub/checkpoints/resnet18-f37072fd.pth
+  0% 0.00/44.7M [00:00<?, ?B/s] 15% 6.48M/44.7M [00:00<00:00, 68.0MB/s] 31% 14.0M/44.7M [00:00<00:00, 70.8MB/s] 51% 22.7M/44.7M [00:00<00:00, 75.9MB/s] 76% 34.0M/44.7M [00:00<00:00, 84.1MB/s]100% 44.7M/44.7M [00:00<00:00, 94.7MB/s]
+  0% 0/127200 [00:00<?, ?it/s]/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+  0% 0/78 [00:00<?, ?it/s][A[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)

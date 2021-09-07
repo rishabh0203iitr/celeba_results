@@ -1,0 +1,74 @@
+0
+SLURM_JOBID=6443
+SLURM_JOB_NODELIST=iitrdgx
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date              = Mon Sep  6 22:06:27 IST 2021
+Hostname          = iitrdgx
+
+Number of Nodes Allucated      = 1
+Number of Tasks Allocated      = 1
+Number of Cores/Task Allocated = 4
+Working Directory = /raid/ysharma_me/fair_lr/LfF
+working directory = /raid/ysharma_me/fair_lr/LfF
+/raid/ysharma_me/fair_lr/LfF
+iitrdgx
+Mon Sep  6 22:06:27 IST 2021
+0
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.11 (build 17345815)
+PyTorch Version 1.8.0a0+17f8c32
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2020 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+ERROR: Detected MOFED driver 4.0-1.0.1, but this container has version 5.1-2.3.7.
+       Please upgrade to MOFED 4.9 or higher for multi-node operation support.
+
+[16:36:34] [WARNING] [debias.main] No observers have been added to this run
+[16:36:34] [INFO] [debias.main] Running command 'train'
+[16:36:34] [INFO] [debias.main] Started
+CelebA
+[16:36:37] [ERROR] [debias.main] Failed after 0:00:03!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/raid/ysharma_me/fair_lr/LfF/train.py", line 93, in train
+    model_b = get_model(model_tag, attr_dims[0]).to(device)
+  File "/raid/ysharma_me/fair_lr/LfF/module/util.py", line 12, in get_model
+    model=model.load_state_dict(torch.load('/raid/ysharma_me/fair_lr/LfF/module/resnet18-f37072fd.pth'))
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 527, in load
+    with _open_zipfile_reader(f) as opened_zipfile:
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 224, in __init__
+    super(_open_zipfile_reader, self).__init__(torch._C.PyTorchFileReader(name_or_buffer))
+RuntimeError: version_ <= kMaxSupportedFileFormatVersion INTERNAL ASSERT FAILED at /pytorch/caffe2/serialize/inline_container.cc:132, please report a bug to PyTorch. Attempted to read a PyTorch file with version 3, but the maximum supported version for reading is 2. Your PyTorch installation may be too old. (init at /pytorch/caffe2/serialize/inline_container.cc:132)
+frame #0: c10::Error::Error(c10::SourceLocation, std::string const&) + 0x33 (0x7fce6afd1193 in /opt/conda/lib/python3.6/site-packages/torch/lib/libc10.so)
+frame #1: caffe2::serialize::PyTorchStreamReader::init() + 0x1f5b (0x7fce6e1599eb in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch.so)
+frame #2: caffe2::serialize::PyTorchStreamReader::PyTorchStreamReader(std::string const&) + 0x64 (0x7fce6e15ac04 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch.so)
+frame #3: <unknown function> + 0x6c53a6 (0x7fceb66383a6 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_python.so)
+frame #4: <unknown function> + 0x2961c4 (0x7fceb62091c4 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #38: <unknown function> + 0x3d0b (0x7fcf19ebdd0b in /opt/conda/lib/python3.6/site-packages/wrapt/_wrappers.cpython-36m-x86_64-linux-gnu.so)
+
+

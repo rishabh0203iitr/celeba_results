@@ -1,3 +1,4 @@
+import torch
 import torch.nn as nn
 from module.resnet import resnet20
 from module.mlp import MLP
@@ -7,7 +8,9 @@ def get_model(model_tag, num_classes):
     if model_tag == "ResNet20":
         return resnet20(num_classes)
     elif model_tag == "ResNet18":
-        model = resnet18(pretrained=False)
+        model = resnet18(pretrained=True)
+        # model=model.load_state_dict(torch.load('/raid/ysharma_me/fair_lr/LfF/module/resnet18-f37072fd.pth'))
+        # model = resnet18(pretrained=False)
         for param in model.parameters():
             param.requires_grad = False
         model.fc = nn.Linear(512, 1024)

@@ -32,7 +32,7 @@ pwd; hostname; date |tee result
 
 echo $CUDA_VISIBLE_DEVICES
 
-NV_GPU=4 nvidia-docker run --rm  --ipc=host -t ${USER_TTY} --name $SLURM_JOB_ID --user $(id -u):$(id -g) -v /raid/ysharma_me/fair_lr/LfF/:/raid/ysharma_me/fair_lr/LfF  pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1 python /raid/ysharma_me/fair_lr/LfF/train.py with server_user celeba
+NV_GPU=3 nvidia-docker run --network common --rm  --ipc=host -t ${USER_TTY} --name $SLURM_JOB_ID --user $(id -u):$(id -g) -v /raid/ysharma_me/fair_lr/LfF/:/raid/ysharma_me/fair_lr/LfF  pytorchlightning-mod-ysharma/pytorch-lightning:base-conda-try-1 python /raid/ysharma_me/fair_lr/LfF/train_kld.py with server_user celeba
 
 
 
